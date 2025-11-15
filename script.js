@@ -26,3 +26,5 @@ function showPopup(bool) {
     document.getElementById('popup').style.visibility = 'hidden'
   }
 }
+
+// Nav Bar Animation

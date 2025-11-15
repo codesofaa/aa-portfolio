@@ -1,19 +1,35 @@
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Josefin Sans,sans-serif;
+  font-weight: 100;
+  background-color: rgb(70, 68, 68);
+  text-shadow: 2px 2px rgb(3, 3, 3);
+  padding-top: 120px;
 }
 
 /* Navigation Bar */
 
 #home {
-  background-color:  blue;
-  padding-bottom: 1cm;
-  margin-left:-1cm;
-  margin-right:-1cm;
-  margin-top:-1cm;
-  padding-top: 2cm;
-  padding-bottom: 2cm;
-  height: 5mm;
- }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: black;            /* START BLACK */
+  backdrop-filter: blur(0px);
+  transition: background 0.4s ease, backdrop-filter 0.4s ease,
+              box-shadow 0.4s ease;
+  z-index: 1000;
+}
+
+#home.scrolled {
+  background: rgba(0, 0, 0, 0); /* FULLY TRANSPARENT */
+  backdrop-filter: blur(0px);
+  box-shadow: none;
+}
 
 .topmenu {
   color: lightgray;
@@ -31,14 +47,16 @@ body {
 
 .topdiv {
   float: right;
+  padding-top: 30px;
   padding-right: 1cm;
 }
+
 
 .profile_name {
   float: left;
   padding-left: 2cm;
-  font-family: Lucida Sans;
   font-size: 30px;
+  font-weight: 800;
   color: lightblue;
 }
 
@@ -63,7 +81,7 @@ h2 {
   font-size: 50px;
   text-align: center;
   float: left;
-  color: #7600bc;
+  color: white;
   margin: 30px;
   margin-left: 60px;
   margin-top: 40px;
@@ -92,22 +110,25 @@ h2 {
 .about-me {
   display: flex;
   align-items: center;
+  background-color: rgb(255, 255, 255);
 }
 
 #about-me h1 {
-  font-size: 65px;
+  font-size: 50px;
+  font-weight: 500;
   margin-top: 90px;
-  color: #7600bc;
+  color: #ffffff;
+  font-family: Josefin Sans,sans-serif;
 }
 
 #about-me p {
   font-size: 25px;
-  color: rgb(128, 128, 128);
+  color: rgb(255, 255, 255);
   margin-top: -1cm;
 }
 
 .profile_image {
-  width: 550px;
+  width: 300px;
   height: fit-content;
   vertical-align: middle;
   margin: 5px;
@@ -119,28 +140,30 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
+  justify-content: space-evenly;
 }
 
 .skill {
   border: 1px solid gray;
+  color: white;
+  background-color: rgb(133, 129, 129);
   display: block;
   border-radius: 6px;
   text-align: center;
   margin: 50px;
   padding: 10px;
   width: 2in;
-  font-size: 20px;
-  box-shadow: 0 3px 10px gray;
+  box-shadow: 0 3px 10px rgb(40, 39, 39);
 }
 
 .skill img {
-  height: 35px;
+  height: 75px;
   align-items: center;
 }
 
-.skills h6 {
+.skills h3 {
   align-items: center;
-  font-size: 20px;
+  font-size: 300;
   margin-block-start: 8px;
   margin-block-end: 5px;
   font-weight: bold;
@@ -148,7 +171,7 @@ h2 {
 
 .skills p {
   align-items: center;
-  font-size: 15px;
+  font-size: 30px;
   color: gray;
   margin-block-start: 5px;
   margin-block-end: 5px;
@@ -181,11 +204,13 @@ h2 {
 .project-card h3 {
   font-size: 25px;
   margin-left: 30px;
+  color: white;
 }
 
 .project-card li {
   font-size: 20px;
   margin-left: 30px;
+  color: white;
 }
 
 /* Recommendations */
@@ -193,20 +218,21 @@ h2 {
 .all_recommendations {
   display: flex;
   align-items: center;
-  margin-left: 1in;
   flex-direction: row;
   flex-flow: wrap;
-  padding: 20px;
+  justify-content: space-evenly;
+  color: white;
 }
 
 .recommendation {
+  background-color: rgb(133, 129, 129);
+  box-shadow: 0 3px 10px rgb(40, 39, 39);
+  color: white;
   font-style: italic;
   text-align: left;
   width: 21.875rem;
   padding: 1rem;
-  background-color: #fff;
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
   border:1px solid gray;
@@ -215,33 +241,35 @@ h2 {
 }
 
 .recommendation span {
-  color: #7600bc;
+  color: rgb(255, 255, 255);
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
-/* Scroll to Top Button */
+/* RECOMMENDATION FORM */
 
-.iconbutton{
-  width: 48px;
-  height: 48px;
-  border-radius: 100%;
-  background-color: #7600bc;
+.flex_center {
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  right: 3%;
-  bottom: 3%;
-  cursor: pointer;
+}
+
+.flex_center fieldset{
+  background-color: gray;
+  border-color: black;
+  border-radius: 2.4%;
+  box-shadow: 0 3px 10px rgb(40, 39, 39);
 }
 
 /* Form Pop-up */
 
 .popup {
   width:400px;
-  background-color: #e8bcf0;
-  border-radius: 3mm;
+  background-color: gray;
+  color: white;
+  border-radius: 5mm;
+  border-color: black;
+  box-shadow: 1px 1px black;
   top: 50%;
   left:50%;
   transform: translate(-50%,-50%);
@@ -257,8 +285,8 @@ h2 {
 
 .popup button {
   background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
+  border: 1px solid gray;
+  color: gray;
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -271,8 +299,8 @@ h2 {
 
 .popup button:hover {
   background-color: #fff;
-  border: 2px solid #7600bc;
-  color: #7600bc;
+  border: 2px solid gray;
+  color: gray;
   display: block;
   font-weight: bolder;
   text-align: center;
@@ -283,8 +311,8 @@ h2 {
 /* Recommendation Form */
 
 input, textarea {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  margin: 10px;  
+  font-family: 'Josefin Sans', sans-serif; 
+  margin: auto;  
   width:100%;
 }
 
@@ -303,8 +331,8 @@ fieldset {
 
 button {
   background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
+  border: 1px solid black;
+  color: gray;
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -315,8 +343,8 @@ button {
 }
 
 button:hover {
-  background-color: #7600bc;
-  border: 1px solid #7600bc;
+  background-color: rgb(185, 184, 184);
+  border: 1px solid black;
   color: #fff;
   display: block;
   border-radius: 6px;
