@@ -4,7 +4,10 @@
     <title>Aaron Adrian Patiu - Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -31,172 +34,218 @@
         <div class="topdiv">
           <a class="topmenu" href="#about-me">About Me</a>
           <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#certificates">Certificates</a>
+          <a class="topmenu" href="#workXp">Work Experience</a>
           <a class="topmenu" href="#projects">Projects</a>
           <a class="topmenu" href="#recommendations">Recommendation</a>
           <!-- Add the links for Skills, Projects and Recommendation here -->
         </div>
       </div>
     </nav>
-<div class="marginForNav">
-
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="icons/formalBlackSuitNoBg.png" class="profile_image" />
-      </div>
-
-      <div>
-        <h1>
-          Hi, I'm Aaron Adrian Patiu!
-        </h1>
-        <br>
-        <p>
- A web developer passionate about building dynamic and responsive web applications. Experienced with the MERN stack and eager to learn and grow in the field of technology. Dedicated to creating efficient and user-friendly projects while continuously improving skills.
-        </p>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div style="clear: both"></div>
-
-      <div class="all_skills">
-        <div class="skill">
-          <img src="html_finalprojimages/html5.png" />
-          <h3>HTML</h3>
-          <p>2 years experience</p>
+    <div class="marginForNav">
+      <!-- About Me -->
+      <section id="about-me" class="container">
+        <div>
+          <img src="icons/formalBlackSuitNoBg.png" class="profile_image" />
         </div>
 
-        <div class="skill">
-          <img src="icons/js.png" />
-          <h3>JavaScript</h3>
-          <p>3 years experience</p>
+        <div>
+          <h1>Hi, I'm Aaron Adrian Patiu!</h1>
+          <br />
+          <p>
+            A web developer passionate about building dynamic and responsive web
+            applications. Experienced with the MERN stack and eager to learn and
+            grow in the field of technology. Dedicated to creating efficient and
+            user-friendly projects while continuously improving skills.
+          </p>
         </div>
+      </section>
 
-        <div class="skill">
-          <img src="icons/nodejs.png" />
-          <h3>Node.js</h3>
-          <p>1 years experience</p>
-        </div>
+      <br /><br /><br />
 
-        <div class="skill">
-          <img src="icons/logo-2582747_1280.png" />
-          <h3>CSS</h3>
-          <p>2 years experience</p>
-        </div>
+      <!-- Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <div style="clear: both"></div>
 
-        <div class="skill">
-          <img src="icons/elephpant-27753_1280.png" />
-          <h3>PHP</h3>
-          <p>3 years experience</p>
-        </div>
-
-        <!-- Add more skills here -->
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>Projects</h2>
-      <div style="clear: both"></div>
-
-      <div id="projects-container" class="projects-container">
-        <div class="project-card">
-          <h3>Thesis Management System</h3>
-          <ul>
-            <li>
-              Developed and deployed a Thesis website integrated with chatbot
-              for thesis project using MERN Stack
-            </li>
-          </ul>
-        </div>
-        <hr />
-        <div class="project-card">
-          <h3>Workout Tracker Website</h3>
-          <ul>
-            <li>
-              Developed a workout tracker using MERN Stack and published it
-              to Github
-            </li>
-          </ul>
-        </div>
-        <hr />
-        <div class="project-card">
-          <h3>POS Website</h3>
-          <ul>
-            <li>
-              Created a point of sale website for a business owners using LAMP
-              Stack
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <div style="clear: both"></div>
-
-    <!-- Recommendations -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-
-      <br>
-
-      <div style="clear: both"></div>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Aaron is a dedicated and quick learner. During our collaboration on a
-          web project, they demonstrated strong problem-solving skills and an
-          impressive understanding of front-end technologies.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Working with Aaron was a great experience. They always took initiative
-          in optimizing code performance and writing clean, efficient JavaScript
-          for our development team.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          I was impressed by Aaron's ability to adapt to new frameworks quickly.
-          Their attention to detail and enthusiasm for full-stack development
-          make them a valuable team member.
-          <span>&#8221;</span>
-        </div>
-      </div>
-    </section>
-
-    <br><br>
-
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>
-          <input type="text" placeholder="Name (Optional)" /> <br />
-          <textarea
-            id="new_recommendation"
-            cols="500"
-            rows="10"
-            placeholder="Message"
-          ></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">
-              Submit
-            </button>
+        <div class="all_skills">
+          <div class="skill">
+            <img src="html_finalprojimages/html5.png" />
+            <h3>HTML</h3>
           </div>
-        </fieldset>
+
+          <div class="skill">
+            <img src="icons/logo-2582747_1280.png" />
+            <h3>CSS</h3>
+          </div>
+
+          <div class="skill">
+            <img src="icons/js.png" />
+            <h3>JavaScript</h3>
+          </div>
+
+          <div class="skill">
+            <img src="icons/nodejs.png" />
+            <h3>Node.js</h3>
+          </div>
+
+          <div class="skill">
+            <img src="icons/elephpant-27753_1280.png" />
+            <h3>PHP</h3>
+          </div>
+
+          <!-- Add more skills here -->
+        </div>
+      </section>
+
+      <!-- Certificates -->
+      <section id="certificates">
+        <h2>Certificates</h2>
+        <br><br><br><br><br><br><br>
+
+        <div class="certificates">
+          <img src="./certs/cert1.jpg" class="thumb" />
+          <img src="./certs/cert2.jpg" class="thumb" />
+          <img src="./certs/cert3.jpg" class="thumb" />
+          <img src="./certs/cert4.jpg" class="thumb" />
+        </div>
+      </section>
+      <br /><br />
+
+      <!-- Work Experience -->
+      <section id="workXp">
+        <div class="workXp">
+                  <h2>Work Experience</h2>
+                <div style="clear: both"></div>
+
+        <div class="workXp-container">
+          <h3>
+            Department of the Interior and Local Government (DILG) - Regional
+            Office III
+          </h3>
+          <h4>Feb. 2025 – May 2025</h4>
+          <h4>IT Intern (On the Job Training)</h4>
+          <ul>
+            <li>
+              Posted bid notices and announcements on the official DILG website
+              using Joomla Content Management System (CMS).
+            </li>
+            <li>
+              Developed a Google Sheets-based tracking system with automated
+              printable forms for efficient data monitoring and reporting.
+            </li>
+            <li>
+              Assisted in troubleshooting computers, printers, and network
+              devices within the regional office.
+            </li>
+            <li>
+              Conducted regular preventive maintenance on computers, including
+              software updates, virus scans, and basic hardware checks.
+            </li>
+          </ul>
+        </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div style="clear: both"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Thesis Management System</h3>
+            <ul>
+              <li>
+                Developed and deployed a Thesis website integrated with chatbot
+                for thesis project using MERN Stack
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div class="project-card">
+            <h3>Workout Tracker Website</h3>
+            <ul>
+              <li>
+                Developed a workout tracker using MERN Stack and published it to
+                Github
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div class="project-card">
+            <h3>POS Website</h3>
+            <ul>
+              <li>
+                Created a point of sale website for a business owners using LAMP
+                Stack
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div style="clear: both"></div>
+
+      <!-- Recommendations -->
+      <section id="recommendations">
+        <h2>Recommendations</h2>
+
+        <br />
+
+        <div style="clear: both"></div>
+        <div class="all_recommendations" id="all_recommendations">
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Aaron is a dedicated and quick learner. During our collaboration on
+            a web project, they demonstrated strong problem-solving skills and
+            an impressive understanding of front-end technologies.
+            <span>&#8221;</span>
+          </div>
+          <div class="recommendation">
+            <span>&#8220;</span>
+            Working with Aaron was a great experience. They always took
+            initiative in optimizing code performance and writing clean,
+            efficient JavaScript for our development team.
+            <span>&#8221;</span>
+          </div>
+          <div class="recommendation">
+            <span>&#8220;</span>
+            I was impressed by Aaron's ability to adapt to new frameworks
+            quickly. Their attention to detail and enthusiasm for full-stack
+            development make them a valuable team member.
+            <span>&#8221;</span>
+          </div>
+        </div>
+      </section>
+
+      <br /><br />
+
+      <!-- Recommendation Form -->
+      <section id="contact">
+        <div class="flex_center">
+          <fieldset>
+            <legend class="introduction">Leave a Recommendation</legend>
+            <input type="text" placeholder="Name (Optional)" /> <br />
+            <textarea
+              id="new_recommendation"
+              cols="500"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <div class="flex_center">
+              <button id="recommend_btn" onclick="addRecommendation()">
+                Submit
+              </button>
+            </div>
+          </fieldset>
+        </div>
+      </section>
+
+      <div class="popup" id="popup" class="flex_center">
+        <img src="html_finalprojimages/checkmark--outline.svg" />
+        <h3>Thank you for submitting your recommendation!</h3>
+        <button onclick="showPopup(false)">Ok</button>
       </div>
-    </section>
-
-
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg" />
-      <h3>Thank you for submitting your recommendation!</h3>
-      <button onclick="showPopup(false)">Ok</button>
     </div>
-
-</div>
   </body>
 </html>

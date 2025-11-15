@@ -27,4 +27,4 @@ function showPopup(bool) {
   }
 }
 
-// Nav Bar Animation
+// Certificate Side Animation
