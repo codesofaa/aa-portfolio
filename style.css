@@ -34,9 +34,9 @@ section {
 }
 
 #home.scrolled {
-  background: rgba(0, 0, 0, 0); /* FULLY TRANSPARENT */
-  backdrop-filter: blur(0px);
-  box-shadow: none;
+  background: #0b132b; /* Change this to your desired color for scrolled state */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+  backdrop-filter: blur(5px);
 }
 
 .topmenu {
@@ -393,4 +393,65 @@ button:hover {
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
+}
+
+/* Scroll to the top */
+
+/* Scroll To Top Button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background: #3a506b;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  display: none; /* hidden at first */
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+
+  /* Animation */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  transform: scale(1.2); /* ZOOM */
+  background: #5bc0be;
+}
+
+/* Fade-in Animation */
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Container hovers */
+
+.skill,
+.thumb,
+.project-card,
+.recommendation {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover,
+.thumb:hover,
+.project-card:hover,
+.recommendation:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
 }
