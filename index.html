@@ -37,7 +37,7 @@
           <a class="topmenu" href="#certificates">Certificates</a>
           <a class="topmenu" href="#workXp">Work Experience</a>
           <a class="topmenu" href="#projects">Projects</a>
-          <a class="topmenu" href="#recommendations">Recommendation</a>
+          <!-- <a class="topmenu" href="#recommendations">Recommendation</a> -->
           <!-- Add the links for Skills, Projects and Recommendation here -->
         </div>
       </div>
@@ -53,10 +53,7 @@
           <h1>Hi, I'm Aaron Adrian Patiu!</h1>
           <br />
           <p>
-            A web developer passionate about building dynamic and responsive web
-            applications. Experienced with the MERN stack and eager to learn and
-            grow in the field of technology. Dedicated to creating efficient and
-            user-friendly projects while continuously improving skills.
+            I build modern web experiences with clean code and thoughtful design.
           </p>
         </div>
       </section>
@@ -101,49 +98,71 @@
       <!-- Certificates -->
       <section id="certificates">
         <h2>Certificates</h2>
-        <br><br><br><br><br><br><br>
+        <br /><br /><br /><br /><br /><br /><br />
 
         <div class="certificates">
-          <img src="./certs/cert1.jpg" class="thumb" />
-          <img src="./certs/cert2.jpg" class="thumb" />
-          <img src="./certs/cert3.jpg" class="thumb" />
-          <img src="./certs/cert4.jpg" class="thumb" />
+          <img
+            src="./certs/cert1.jpg"
+            class="thumb"
+            alt="HTML & CSS Certificate"
+          />
+          <img
+            src="./certs/cert2.jpg"
+            class="thumb"
+            alt="JavaScript Certificate"
+          />
+          <img
+            src="./certs/cert3.jpg"
+            class="thumb"
+            alt="Web Development Certificate"
+          />
+          <img
+            src="./certs/cert4.jpg"
+            class="thumb"
+            alt="MERN Stack Certificate"
+          />
         </div>
       </section>
+
+      <!-- Modal -->
+      <div id="imgModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg" />
+      </div>
       <br /><br />
 
       <!-- Work Experience -->
       <section id="workXp">
         <div class="workXp">
-                  <h2>Work Experience</h2>
-                <div style="clear: both"></div>
+          <h2>Work Experience</h2>
+          <div style="clear: both"></div>
 
-        <div class="workXp-container">
-          <h3>
-            Department of the Interior and Local Government (DILG) - Regional
-            Office III
-          </h3>
-          <h4>Feb. 2025 – May 2025</h4>
-          <h4>IT Intern (On the Job Training)</h4>
-          <ul>
-            <li>
-              Posted bid notices and announcements on the official DILG website
-              using Joomla Content Management System (CMS).
-            </li>
-            <li>
-              Developed a Google Sheets-based tracking system with automated
-              printable forms for efficient data monitoring and reporting.
-            </li>
-            <li>
-              Assisted in troubleshooting computers, printers, and network
-              devices within the regional office.
-            </li>
-            <li>
-              Conducted regular preventive maintenance on computers, including
-              software updates, virus scans, and basic hardware checks.
-            </li>
-          </ul>
-        </div>
+          <div class="workXp-container">
+            <h3>
+              Department of the Interior and Local Government (DILG) - Regional
+              Office III
+            </h3>
+            <h4>Feb. 2025 – May 2025</h4>
+            <h4>IT Intern (On the Job Training)</h4>
+            <ul>
+              <li>
+                Posted bid notices and announcements on the official DILG
+                website using Joomla Content Management System (CMS).
+              </li>
+              <li>
+                Developed a Google Sheets-based tracking system with automated
+                printable forms for efficient data monitoring and reporting.
+              </li>
+              <li>
+                Assisted in troubleshooting computers, printers, and network
+                devices within the regional office.
+              </li>
+              <li>
+                Conducted regular preventive maintenance on computers, including
+                software updates, virus scans, and basic hardware checks.
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -164,22 +183,25 @@
           </div>
           <hr />
 
-<a href="https://website-home-project.vercel.app/" target="_blank" style="text-decoration: none; color: inherit;">
-  <div class="project-card">
-    <h3>Real Estate Website</h3>
-    <ul>
-      <li>
-        Created a Real Estate website using HTML, CSS, JavaScript
-      </li>
-    </ul>
-  </div>
-</a>
-
+          <a
+            href="https://website-home-project.vercel.app/"
+            target="_blank"
+            style="text-decoration: none; color: inherit"
+          >
+            <div class="project-card">
+              <h3>Real Estate Website</h3>
+              <ul>
+                <li>
+                  Created a Real Estate website using HTML, CSS, JavaScript
+                </li>
+              </ul>
+            </div>
+          </a>
         </div>
       </section>
       <div style="clear: both"></div>
 
-      <!-- Recommendations -->
+      <!-- Recommendations
       <section id="recommendations">
         <h2>Recommendations</h2>
 
@@ -209,12 +231,12 @@
             <span>&#8221;</span>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <br /><br />
 
       <!-- Recommendation Form -->
-      <section id="contact">
+      <!-- <section id="contact">
         <div class="flex_center">
           <fieldset>
             <legend class="introduction">Leave a Recommendation</legend>
@@ -232,7 +254,7 @@
             </div>
           </fieldset>
         </div>
-      </section>
+      </section> -->
 
       <div class="popup" id="popup" class="flex_center">
         <img src="html_finalprojimages/checkmark--outline.svg" />
@@ -242,7 +264,5 @@
     </div>
 
     <button id="scrollTopBtn">⬆</button>
-
-
   </body>
 </html>

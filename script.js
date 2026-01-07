@@ -92,3 +92,30 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", revealOnScroll);
   revealOnScroll(); // trigger on load
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.querySelector(".close");
+  const thumbs = document.querySelectorAll(".thumb");
+
+  thumbs.forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+    });
+  });
+
+  closeBtn.onclick = () => {
+    modal.style.display = "none";
+  };
+
+  modal.onclick = () => {
+    modal.style.display = "none";
+  };
+});
+
+
